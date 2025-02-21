@@ -18,7 +18,7 @@ const doublezero = document.getElementById("doublezero");
 const zero = document.getElementById("zero");
 const dot = document.getElementById("dot");
 const equal = document.getElementById("equal"); */
-
+console.log("js works LOL");
 const  result_display = document.getElementById("result_display");
 
 function appendtoresult_display(input)
