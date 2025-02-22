@@ -8,30 +8,31 @@
 </head>
 <body>
     <div class="box1">
-        <input class="result" placeholder="0" readonly>
+        <input class="result" id="result_display" placeholder="0" readonly>
         <div class="buttons">
-            <button class="darkder">AC</button>
-            <button class="darkder">%</button>
-            <button class="darkder">Del</button>
-            <button class="darkder">/</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button class="darkder">X</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button class="darkder">-</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button class="darkder">+</button>
-            <button>00</button>
-            <button>0</button>
-            <button>.</button>
-            <button class="lighter">=</button>
+            <button class="darkder" id="ac" onclick="cleareresult_display()">AC</button>
+            <button class="darkder" id="modlus" onclick="appendtoresult_display('%')">%</button>
+            <button class="darkder" id="del" onclick="cut_one_element()">Del</button>
+            <button class="darkder" id="divide" onclick="appendtoresult_display('/')">/</button>
+            <button id="seven" onclick="appendtoresult_display('7')">7</button>
+            <button id="eight" onclick="appendtoresult_display('8')">8</button>
+            <button id="nine" onclick="appendtoresult_display('9')">9</button>
+            <button class="darkder" id="multi" onclick="appendtoresult_display('X')">X</button>
+            <button id="four" onclick="appendtoresult_display('4')">4</button>
+            <button id="five" onclick="appendtoresult_display('5')">5</button>
+            <button id="six" onclick="appendtoresult_display('6')">6</button>
+            <button class="darkder" id="minus" onclick="appendtoresult_display('-')">-</button>
+            <button id="one" onclick="appendtoresult_display('1')">1</button>
+            <button id="two" onclick="appendtoresult_display('2')">2</button>
+            <button id="three" onclick="appendtoresult_display('3')">3</button>
+            <button class="darkder" id="plus" onclick="appendtoresult_display('+')">+</button>
+            <button id="doublezero" onclick="appendtoresult_display('00')">00</button>
+            <button id="zero" onclick="appendtoresult_display('0')">0</button>
+            <button id="dot" onclick="appendtoresult_display('.')">.</button>
+            <button class="lighter" id="equal" onclick="provide_result()">=</button>
         </div>
     </div>
-    <script src="calculator1.js"> </script>
+
+    <script src="calculator1.js"></script>
 </body>
 </html>
